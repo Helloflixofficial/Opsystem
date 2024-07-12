@@ -12,3 +12,17 @@ git push -u origin main
 git remote add origin https://github.com
 git branch -M main
 git push -u origin main
+
+Probably you did not fetch the remote changes before the rebase or someone pushed new changes (while you were rebasing and trying to push). Try these steps:
+
+#fetching remote 'feature/my_feature_branch' branch to the 'tmp' local branch
+git fetch origin feature/my_feature_branch:tmp
+
+#rebasing on local 'tmp' branch
+git rebase tmp
+
+#pushing local changes to the remote
+git push origin HEAD:feature/my_feature_branch
+
+#removing temporary created 'tmp' branch
+git branch -D tmp
