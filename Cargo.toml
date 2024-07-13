@@ -2,7 +2,7 @@
 name = "blog_os"
 version = "0.1.0"
 edition = "2021"
-authors = ["Author Name <author@example.com>"]
+authors = ["BOBY SHARMA <helloflixofficial@gmail.com>"]
 
 
 # the profile used for `cargo build`
@@ -13,3 +13,4 @@ panic = "abort" # disable stack unwinding on panic
 panic = "abort" # disable stack unwinding on panic
 
 [dependencies]
+bootloader = "0.9.8"
