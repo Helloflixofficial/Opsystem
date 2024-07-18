@@ -1,4 +1,4 @@
-foloowing == "https://os.phil-opp.com/minimal-rust-kernel/"
+foloowing == "https://os.phil-opp.com/minimal-rust-kernel/"  31
 
 echo "# Opsystem" >> README.md
 git init
